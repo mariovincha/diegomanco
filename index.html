@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diego Manco Training - 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo-text"><img src="images/diego_manco_logo_vertical.png" alt="Diego Manco Training" height="50"></a>
+    <ul class="nav-links">
+      <li><a href="#">Acerca</a></li>
+      <li><a href="#">Membresías</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Programas</a></li>
+      <li><a href="#">Contáctanos</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-phone">+51 972 020 185</span>
+      <a href="#" class="btn btn-blue">Escríbenos →</a>
+      <!--<a href="#" class="btn btn-outline">Log In</a> -->
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SLIDER -->
+<section class="hero" style="margin-top:70px;">
+  <div class="hero-slides" id="heroSlides">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide slide-1">
+      <img class="hero-slide-img" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1400&q=80" alt="Hero 1">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide slide-2">
+      <img class="hero-slide-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1400&q=80" alt="Hero 2">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="hero-slide slide-3">
+      <img class="hero-slide-img" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1400&q=80" alt="Hero 3">
+    </div>
+
+  </div>
+
+  <!-- Hero content (always visible) -->
+  <div class="hero-content">
+    <div class="hero-content-inner">
+      <p class="hero-eyebrow">Especialista en preparación física</p>
+      <h1 class="hero-title">
+        Esfuerzo hoy<br>
+        <span class="accent">Resultados</span><br>
+        Mañana
+      </h1>
+      <p class="hero-sub">Entrenamientos personalizados, enfoque técnico y motivación constante.</p>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-value">730+</div>
+          <div class="hstat-label">Clientes Felices</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-value">233+</div>
+          <div class="hstat-label">Membresías</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-value">5+</div>
+          <div class="hstat-label">Entrenadores</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:16px;align-items:center;">
+        <a href="#" class="btn btn-blue">Ver Membresías →</a>
+        <a href="#" class="btn btn-dark-solid">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arrows -->
+  <div class="hero-arrows">
+    <button class="hero-arr" id="heroPrev">&#8592;</button>
+    <button class="hero-arr" id="heroNext">&#8594;</button>
+  </div>
+
+  <!-- Dots -->
+  <div class="hero-dots" id="heroDots">
+    <div class="hero-dot active" data-idx="0"></div>
+    <div class="hero-dot" data-idx="1"></div>
+    <div class="hero-dot" data-idx="2"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+    <span class="ticker-item">Esta semana con todo <span class="ticker-dot"></span></span>
+  </div>
+</div>
+
+<!-- WORK ON YOUR BODY -->
+<section class="body-section">
+  <div class="container">
+    <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Ofrecemos</p>
+    <h2 class="section-title">Entrena tu cuerpo</h2>
+    <p class="section-sub">Nuestros programas están diseñados para superar tus límites y ayudarte a alcanzar tus objetivos de fitness más rápido. Dirigidos por expertos, orientados a resultados.</p>
+    <div class="body-features">
+      <div class="body-feat">
+        <div class="body-feat-icon">🏋️</div>
+        <h3>Entrenamiento de fuerza</h3>
+        <p>Desarrolla masa muscular magra y aumenta tu fuerza general con nuestros programas estructurados de entrenamiento con pesas, diseñados para todos los niveles.</p>
+      </div>
+      <div class="body-feat">
+        <div class="body-feat-icon">🔥</div>
+        <h3>Cardio & HIIT</h3>
+        <p>Quema calorías, mejora tu resistencia y acelera tu metabolismo con nuestras sesiones de cardio y entrenamiento de intervalos de alta intensidad.</p>
+      </div>
+      <div class="body-feat">
+        <div class="body-feat-icon">🧘</div>
+        <h3>Recuperación & movilidad</h3>
+        <p>Previene lesiones y mejora tu rendimiento con sesiones específicas de recuperación, estiramientos y ejercicios de movilidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-img-wrap">
+        <img src="https://images.unsplash.com/photo-1549476464-37392f717541?w=600&q=80" alt="Training">
+        <div class="about-img-label">ESFUERZO</div>
+      </div>
+      <div class="about-text">
+        <p class="about-eyebrow">Acerca de Nosotros</p>
+        <h2 class="about-title">No te rindas,<br>Las grandes cosas llevan tiempo</h2>
+        <p class="about-desc">Creo que la transformación es un proceso, no un evento. Como entrenador certificado te guiaré en cada paso, desde tu primera sesión hasta alcanzar tu máximo rendimiento. La constancia es la clave de la perfección. Asiste, esfuérzate y confía en el proceso.</p>
+        <a href="#" class="btn btn-blue">Contáctanos →</a>
+      </div>
+      <div class="about-right">
+        <div class="about-timer">
+          <div class="about-timer-value">24/7</div>
+          <div class="about-timer-label">Open Access</div>
+        </div>
+        <p style="font-size:12px;color:var(--gray);text-align:center;margin-top:16px;max-width:120px;line-height:1.6;">Entrena según tus horarios</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section class="membership">
+  <div class="container">
+    <div class="membership-header">
+      <div>
+        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:8px;">Precios</p>
+        <h2 class="section-title-main">Escoge tu membresía</h2>
+      </div>
+      <a href="#" class="btn btn-blue">Nuestros Planes →</a>
+    </div>
+    <div class="membership-plans">
+      <div class="plan-row">
+        <div class="plan-price"><sup>S/</sup>250</div>
+        <div class="plan-info">
+          <div class="plan-name">4 clases - 1 Mes</div>
+          <p class="plan-desc">Menos cosas access to all classes, equipment, and locker facilities. Includes personalized training plan and monthly progress check-in.</p>
+        </div>
+        <a href="https://shorturl.at/NOgmB" target="_blank" class="btn btn-dark-solid">Comprar <i class="fas fa-shopping-cart"></i></a>
+      </div>
+      <div class="plan-row">
+        <div class="plan-price"><sup>S/</sup>450</div>
+        <div class="plan-info">
+          <div class="plan-name">8 clases - 1 Mes</div>
+          <p class="plan-desc">Full access to all classes, equipment, and locker facilities. Includes personalized training plan and monthly progress check-in.</p>
+        </div>
+        <a href="https://api.whatsapp.com/send?phone=+51972020185&text=Quiero%20comprar%20la%20membres%C3%ADa%20de%20S/450%20soles" target="_blank" class="btn btn-dark-solid">Comprar <i class="fas fa-shopping-cart"></i></a>
+      </div>
+      <div class="plan-row">
+        <div class="plan-price"><sup>S/</sup>650</div>
+        <div class="plan-info">
+          <div class="plan-name">12 clases - 1 Mes</div>
+          <p class="plan-desc">Flexible class pack — use across any group session. Perfect for those who want variety without a full commitment.</p>
+        </div>
+<a href="https://api.whatsapp.com/send?phone=+51972020185&text=Quiero%20comprar%20la%20membres%C3%ADa%20de%20S/650%20soles" target="_blank" class="btn btn-dark-solid">Comprar <i class="fas fa-shopping-cart"></i></a>
+      </div>
+      <div class="plan-row">
+        <div class="plan-price"><sup>S/</sup>850</div>
+        <div class="plan-info">
+          <div class="plan-name">16 clases - 1 Mes</div>
+          <p class="plan-desc">Try any class with no strings attached. Ideal for visitors or anyone testing the waters before committing.</p>
+        </div>
+<a href="https://api.whatsapp.com/send?phone=+51972020185&text=Quiero%20comprar%20la%20membres%C3%ADa%20de%20S/850%20soles" target="_blank" class="btn btn-dark-solid">Comprar <i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-section">
+  <div class="container">
+    <div class="quote-inner">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">Nunca cambiarás tu vida hasta que cambies algo que haces a diario. El secreto de tu éxito reside en tu rutina diaria.</p>
+      <p class="quote-author">— Diego Manco</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO CARDS -->
+<div class="promo-row">
+  <div class="promo-card promo-card-1">
+    <div class="container" style="padding:0;">
+      <p class="promo-eyebrow">Membership</p>
+      <h3 class="promo-title">Join Membership Now And<br><span>Get 40% Off!</span></h3>
+      <p class="promo-desc">Limited time offer for new members. Sign up today and unlock all facilities, classes, and trainer support at a massive discount.</p>
+      <a href="#" class="btn btn-blue">Claim Offer →</a>
+    </div>
+  </div>
+  <div class="promo-card promo-card-2">
+    <div style="padding:0;">
+      <p class="promo-eyebrow">Opening Hours</p>
+      <h3 class="promo-title">Check Our Classes'<br>Opening Hours!</h3>
+      <p class="promo-desc">Morning sessions start at 6:00 AM. Evening classes run until 10:00 PM. View the full schedule and book your spot online.</p>
+      <a href="#" class="btn" style="background:#000;color:#fff;">View Schedule →</a>
+    </div>
+  </div>
+</div>
+
+<!-- APP SECTION -->
+<!-- <section class="app-section">
+  <div class="container">
+    <div class="app-inner">
+      <div class="app-mockup">
+        <div class="app-phone">
+          <div class="app-phone-screen">
+            <div style="font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:2px;margin-bottom:12px;">FITNESS ZONE</div>
+            <div class="app-phone-bar"></div>
+            <div class="app-phone-card">
+              <div class="app-phone-label">Today's Workout</div>
+              <div class="app-phone-value">Chest & Arms</div>
+            </div>
+            <div class="app-phone-card">
+              <div class="app-phone-label">Calories Burned</div>
+              <div class="app-phone-value">640 kcal</div>
+            </div>
+            <div class="app-phone-card">
+              <div class="app-phone-label">Next Class</div>
+              <div class="app-phone-value">7:00 AM</div>
+            </div>
+            <div style="margin-top:auto;height:4px;background:rgba(255,255,255,0.06);border-radius:2px;">
+              <div style="width:65%;height:100%;background:var(--blue);border-radius:2px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app-content">
+        <p class="app-eyebrow">Mobile App</p>
+        <h2 class="app-title">Download Fitness Zone App<br>And Start Workout Today</h2>
+        <p class="app-desc">Track your workouts, book classes, connect with your trainer, and monitor your progress — all in one place. Available on iOS and Android.</p>
+        <div class="app-store-btns">
+          <a href="#" class="store-btn">
+            <span class="store-btn-icon">▶</span>
+            <span class="store-btn-text">
+              <span class="store-btn-sub">Get It On</span>
+              <span class="store-btn-name" style="display:block;">Google Play</span>
+            </span>
+          </a>
+          <a href="#" class="store-btn">
+            <span class="store-btn-icon">⌘</span>
+            <span class="store-btn-text">
+              <span class="store-btn-sub">Download On</span>
+              <span class="store-btn-name" style="display:block;">App Store</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- PROGRAMS -->
+<section class="programs">
+  <div class="container">
+    <div class="programs-inner">
+      <div class="programs-text">
+        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Our Programs</p>
+        <h2 class="programs-title">Start Working On A New You With Fitness Zone Programs</h2>
+        <p class="programs-desc">From beginners to advanced athletes, our curated programs are built to challenge, motivate, and deliver real results. Choose the path that fits your goals.</p>
+        <a href="#" class="btn btn-blue">View All Programs →</a>
+      </div>
+      <div class="programs-images">
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=80" alt="Zumba">
+          <div class="prog-img-label">
+            <div class="prog-img-name">Zumba</div>
+            <div class="prog-img-sub">Mon / Wed / Fri</div>
+          </div>
+        </div>
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="Yoga">
+          <div class="prog-img-label">
+            <div class="prog-img-name">Yoga</div>
+            <div class="prog-img-sub">Tue / Thu / Sat</div>
+          </div>
+        </div>
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&q=80" alt="Boxing">
+          <div class="prog-img-label">
+            <div class="prog-img-name">Boxing</div>
+            <div class="prog-img-sub">Mon / Wed</div>
+          </div>
+        </div>
+        <div class="prog-img-wrap">
+          <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&q=80" alt="Cycling">
+          <div class="prog-img-label">
+            <div class="prog-img-name">Cycling</div>
+            <div class="prog-img-sub">Daily 6AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section class="trainers">
+  <div class="container">
+    <div class="trainers-header">
+      <p class="trainers-eyebrow">Nuestro Team</p>
+      <h2 class="trainers-title">Conoce a nuestros entrenadores</h2>
+      <p class="trainers-sub">Entrenadores de primer nivel dedicados a ayudarte a alcanzar tu máximo rendimiento.</p>
+    </div>
+    <div class="trainers-grid">
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&q=80" alt="Trainer 1">
+        <div class="trainer-info">
+          <div class="trainer-name">Diego Manco</div>
+          <div class="trainer-role">Fuerza & Acondicionamiento</div>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Trainer 2">
+        <div class="trainer-info">
+          <div class="trainer-name">Rosario Quispe</div>
+          <div class="trainer-role">Halterofilia</div>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&q=80" alt="Trainer 3">
+        <div class="trainer-info">
+          <div class="trainer-name">Susana Manco</div>
+          <div class="trainer-role">Fuerza & Halterofilia</div>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=400&q=80" alt="Trainer 4">
+        <div class="trainer-info">
+          <div class="trainer-name">Jordan Blake</div>
+          <div class="trainer-role">Boxing & Combat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container">
+    <div class="testimonials-header">
+      <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Opiniones</p>
+      <h2 class="testimonials-title">Descubre lo que dicen nuestros clientes<br>Sobre nosotros</h2>
+      <p class="testimonials-sub">Personas reales, resultados reales. Nuestros miembros comparten sus historias de transformación.</p>
+    </div>
+
+    <div class="testi-slider-wrap">
+      <div class="testi-track" id="testiTrack">
+
+        <div class="testi-slide">
+          <div class="testi-img-wrap">
+            <img src="images/paloma_fiuza.png" alt="Client 1">
+          </div>
+          <div class="testi-content">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"Las clases son increíbles. La energía, la comunidad, los instructores, todo. Tengo muchas ganas de venir todos los días. La mejor inversión que he hecho para mi salud."</p>
+            <div class="testi-name">Paloma Fiuza</div>
+            <div class="testi-role">Alumna desde 2023</div>
+            <div class="testi-controls">
+              <button class="testi-arr" id="testiPrev">&#8592;</button>
+              <button class="testi-arr" id="testiNext">&#8594;</button>
+              <span class="testi-counter"><span id="testiCurrent">1</span> / <span id="testiTotal">3</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-slide">
+          <div class="testi-img-wrap">
+            <img src="images/karen_dejo.png" alt="Client 2">
+          </div>
+          <div class="testi-content">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"The group classes are incredible. The energy, the community, the instructors — I look forward to coming every single day. Best investment I've made for my health."</p>
+            <div class="testi-name">Karen Dejo</div>
+            <div class="testi-role">Alumna desde 2024</div>
+            <div class="testi-controls">
+              <button class="testi-arr" id="testiPrev2">&#8592;</button>
+              <button class="testi-arr" id="testiNext2">&#8594;</button>
+              <span class="testi-counter"><span>2</span> / 3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-slide">
+          <div class="testi-img-wrap">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80" alt="Client 3">
+          </div>
+          <div class="testi-content">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-quote">"As a beginner I was nervous, but the staff made me feel welcome from day one. The app makes scheduling so easy. I've gone from 0 to 5 sessions a week."</p>
+            <div class="testi-name">James Whitmore</div>
+            <div class="testi-role">Member since 2024</div>
+            <div class="testi-controls">
+              <button class="testi-arr" id="testiPrev3">&#8592;</button>
+              <button class="testi-arr" id="testiNext3">&#8594;</button>
+              <span class="testi-counter"><span>3</span> / 3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<!-- <section class="blog">
+  <div class="container">
+    <div class="blog-header">
+      <div>
+        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:8px;">Insights</p>
+        <h2 class="section-title-main">Latest Blogs</h2>
+      </div>
+      <a href="#" class="btn btn-outline">View All Blogs →</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=500&q=80" alt="Blog 1">
+        <div class="blog-card-body">
+          <div class="blog-card-date">Jun 10, 2026</div>
+          <h3 class="blog-card-title">Lorem Ipsum Saber Amet Lorem Ipsum</h3>
+          <p class="blog-card-excerpt">Discover how progressive overload can transform your strength gains and why most people skip this crucial principle.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=80" alt="Blog 2">
+        <div class="blog-card-body">
+          <div class="blog-card-date">Jun 05, 2026</div>
+          <h3 class="blog-card-title">Lorem Ipsum Dolor Sit Amet Consectetur</h3>
+          <p class="blog-card-excerpt">Nutrition timing matters more than most think. Here's what to eat before and after training for maximum performance.</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img class="blog-card-img" src="https://images.unsplash.com/photo-1518644730709-0835105d9daa?w=500&q=80" alt="Blog 3">
+        <div class="blog-card-body">
+          <div class="blog-card-date">May 28, 2026</div>
+          <h3 class="blog-card-title">Lorem Ipsum Amet Consectetur Adipiscing</h3>
+          <p class="blog-card-excerpt">Recovery is where growth happens. Learn the science behind rest days and why skipping them can hold you back.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div>
+        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Stay Updated</p>
+        <h2 class="newsletter-title">Newsletter</h2>
+        <p class="newsletter-sub">Get the latest workout tips, class schedules, and exclusive member offers delivered to your inbox.</p>
+      </div>
+      <div class="newsletter-form">
+        <input class="newsletter-input" type="email" placeholder="Enter your email address...">
+        <a href="#" class="btn btn-blue" style="white-space:nowrap;">Subscribe →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-text">FITNESS <span>ZONE</span></div>
+        <p>+1 (808) 475 8866</p>
+        <p>fitness@fitnesszone.com</p>
+        <p>400 Broad St, Seattle, WA 98108</p>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Classes & Schedule</a></li>
+          <li><a href="#">Membresías</a></li>
+          <li><a href="#">Personal</a></li>
+          <li><a href="#">Planes de nutrición</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Acerca</h4>
+        <ul>
+          <li><a href="#">Entrenadores</a></li>
+          <li><a href="#">Facilities</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Síguenos</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Diego Manco Training. Todos los derechos reservados.</p>
+      <!-- <p><a href="#" style="color:rgba(255,255,255,0.25);text-decoration:none;">Privacy Policy</a> &nbsp;·&nbsp; <a href="#" style="color:rgba(255,255,255,0.25);text-decoration:none;">Terms of Service</a></p> -->
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── HERO SLIDER ──
+  const slides = document.getElementById('heroSlides');
+  const dots = document.querySelectorAll('.hero-dot');
+  let current = 0;
+  const total = 3;
+
+  function goTo(idx) {
+    current = (idx + total) % total;
+    slides.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  document.getElementById('heroNext').addEventListener('click', () => goTo(current + 1));
+  document.getElementById('heroPrev').addEventListener('click', () => goTo(current - 1));
+  dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.idx)));
+
+  // Auto-advance
+  setInterval(() => goTo(current + 1), 5000);
+
+  // ── TESTIMONIALS SLIDER ──
+  const testiTrack = document.getElementById('testiTrack');
+  let testiCurrent = 0;
+  const testiTotal = 3;
+
+  function testiGoTo(idx) {
+    testiCurrent = (idx + testiTotal) % testiTotal;
+    testiTrack.style.transform = `translateX(-${testiCurrent * 100}%)`;
+    document.getElementById('testiCurrent').textContent = testiCurrent + 1;
+  }
+
+  // Wire all prev/next buttons in testimonials
+  ['testiNext','testiNext2','testiNext3'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => testiGoTo(testiCurrent + 1));
+  });
+  ['testiPrev','testiPrev2','testiPrev3'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => testiGoTo(testiCurrent - 1));
+  });
+</script>
+
+</body>
+</html>
