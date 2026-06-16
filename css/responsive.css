@@ -1,0 +1,575 @@
+/* =====================================================
+   DIEGO MANCO TRAINING — RESPONSIVE CSS
+   Agrega este archivo DESPUÉS de style.css en el HTML:
+   <link rel="stylesheet" href="css/responsive.css">
+   ===================================================== */
+
+/* ─── TABLET GRANDE: hasta 1200px ─── */
+@media (max-width: 1200px) {
+
+  .container {
+    padding: 0 28px;
+  }
+
+  .nav-inner {
+    padding: 0 28px;
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  /* Hero */
+  .hero-content-inner {
+    padding: 0 28px;
+  }
+
+  /* About */
+  .about-inner {
+    grid-template-columns: 1fr 1.3fr 0.7fr;
+    gap: 40px;
+  }
+
+  /* Membership */
+  .plan-row {
+    grid-template-columns: 140px 1fr auto;
+    padding: 24px 28px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  /* Trainers */
+  .trainers-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+  }
+}
+
+/* ─── TABLET: hasta 1024px ─── */
+@media (max-width: 1024px) {
+
+  /* NAV: ocultar links y teléfono, mostrar hamburger */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-phone {
+    display: none;
+  }
+
+  .nav-inner {
+    justify-content: space-between;
+  }
+
+  /* Agregar botón hamburger si se desea con JS;
+     por ahora el nav-right queda con solo el botón CTA */
+
+  /* Hero */
+  .hero {
+    height: 90vh;
+    min-height: 520px;
+  }
+
+  .hero-content {
+    bottom: 100px;
+  }
+
+  /* About */
+  .about-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .about-right {
+    display: none; /* Se oculta el 24/7 en tablet para limpiar layout */
+  }
+
+  /* Body features */
+  .body-features {
+    gap: 24px;
+  }
+
+  /* Programs */
+  .programs-inner {
+    gap: 40px;
+  }
+
+  /* App section */
+  .app-inner {
+    gap: 40px;
+  }
+
+  /* Newsletter */
+  .newsletter-inner {
+    gap: 40px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  /* Testimonials */
+  .testi-slide {
+    gap: 36px;
+  }
+
+  /* Trainers grid */
+  .trainers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+}
+
+/* ─── MÓVIL GRANDE: hasta 768px ─── */
+@media (max-width: 768px) {
+
+  /* Container */
+  .container {
+    padding: 0 20px;
+  }
+
+  /* ── NAV ── */
+  .nav-inner {
+    padding: 0 20px;
+    gap: 12px;
+  }
+
+  .nav-right .btn {
+    font-size: 11px;
+    padding: 10px 14px;
+    letter-spacing: 1px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    height: 100svh;
+    min-height: 580px;
+  }
+
+  .hero-content {
+    bottom: 80px;
+  }
+
+  .hero-content-inner {
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: clamp(40px, 11vw, 64px);
+  }
+
+  .hero-stats {
+    gap: 24px;
+    margin-bottom: 28px;
+  }
+
+  .hstat-value {
+    font-size: 28px;
+  }
+
+  .hero-sub {
+    font-size: 12px;
+    max-width: 100%;
+  }
+
+  /* Botones hero en columna si no caben */
+  .hero-content-inner > div[style] {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Arrows más pequeñas */
+  .hero-arr {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .hero-arrows {
+    bottom: 24px;
+    right: 20px;
+  }
+
+  .hero-dots {
+    bottom: 36px;
+  }
+
+  /* ── TICKER ── */
+  .ticker-item {
+    font-size: 12px;
+    padding: 0 18px;
+  }
+
+  /* ── BODY / FEATURES ── */
+  .body-section {
+    padding: 60px 0;
+  }
+
+  .body-features {
+    grid-template-columns: 1fr;
+    gap: 0;
+    text-align: center;
+  }
+
+  .body-feat {
+    padding: 24px 20px;
+    border-top: none;
+    border-left: 3px solid var(--blue);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .body-feat:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ── ABOUT ── */
+  .about-strip {
+    padding: 60px 0;
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-right {
+    display: none;
+  }
+
+  .about-img-wrap img {
+    height: 260px;
+  }
+
+  /* ── MEMBERSHIP ── */
+  .membership {
+    padding: 60px 0;
+  }
+
+  .membership-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .plan-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .plan-price {
+    font-size: 42px;
+  }
+
+  .plan-row .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ── QUOTE ── */
+  .quote-section {
+    padding: 50px 0;
+  }
+
+  .quote-text {
+    font-size: clamp(16px, 4.5vw, 22px);
+  }
+
+  /* ── PROMO CARDS ── */
+  .promo-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .promo-card {
+    padding: 36px 24px;
+  }
+
+  /* ── PROGRAMS ── */
+  .programs {
+    padding: 60px 0;
+  }
+
+  .programs-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .programs-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+
+  /* ── APP SECTION ── */
+  .app-section {
+    padding: 60px 0;
+  }
+
+  .app-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .app-mockup {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ── TRAINERS ── */
+  .trainers {
+    padding: 60px 0;
+  }
+
+  .trainers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    padding: 60px 0;
+  }
+
+  .testi-slide {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .testi-img-wrap img {
+    height: 240px;
+  }
+
+  /* ── NEWSLETTER ── */
+  .newsletter {
+    padding: 50px 0;
+  }
+
+  .newsletter-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .newsletter-input {
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: none;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 50px 0 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 36px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+/* ─── MÓVIL PEQUEÑO: hasta 480px ─── */
+@media (max-width: 480px) {
+
+  /* NAV */
+  .nav-inner {
+    gap: 8px;
+  }
+
+  .nav-logo-text img {
+    height: 38px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 12vw, 52px);
+  }
+
+  .hero-stats {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .hstat-value {
+    font-size: 26px;
+  }
+
+  /* Body feat */
+  .body-feat {
+    padding: 20px 16px;
+  }
+
+  /* About */
+  .about-img-wrap img {
+    height: 220px;
+  }
+
+  .about-title {
+    font-size: clamp(26px, 7vw, 36px);
+  }
+
+  /* Plans */
+  .plan-price {
+    font-size: 36px;
+  }
+
+  .plan-price sup {
+    font-size: 16px;
+  }
+
+  /* Promo */
+  .promo-card {
+    padding: 28px 20px;
+  }
+
+  .promo-title {
+    font-size: clamp(20px, 5.5vw, 28px);
+  }
+
+  /* Programs */
+  .programs-images {
+    grid-template-columns: 1fr;
+  }
+
+  /* Trainers */
+  .trainers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Testimonials */
+  .testi-img-wrap img {
+    height: 200px;
+  }
+
+  .testi-quote {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+
+  /* Newsletter */
+  .newsletter-input {
+    padding: 14px 16px;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  /* Store buttons */
+  .app-store-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ─── MENÚ HAMBURGER (Opcional — requiere JS) ─── */
+/*
+   Si quieres agregar el menú hamburger en mobile,
+   añade este botón en el HTML dentro de .nav-inner:
+
+   <button class="nav-hamburger" id="navToggle">
+     <span></span><span></span><span></span>
+   </button>
+
+   Y activa con JS:
+   document.getElementById('navToggle').addEventListener('click', function() {
+     document.querySelector('.nav-links').classList.toggle('nav-open');
+   });
+*/
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  transition: transform .3s, opacity .3s;
+}
+
+@media (max-width: 1024px) {
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(13,13,13,0.98);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 20px 0 28px;
+    z-index: 199;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+
+  .nav-links a:hover {
+    background: rgba(21,117,181,0.1);
+  }
+}
