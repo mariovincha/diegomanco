@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="shortcut icon" href="images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -23,6 +24,9 @@
       <li><a href="#">Programas</a></li>
       <li><a href="#">Contáctanos</a></li>
     </ul>
+    <button class="nav-hamburger" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
     <div class="nav-right">
       <span class="nav-phone">+51 972 020 185</span>
       <a href="#" class="btn btn-blue">Escríbenos →</a>
@@ -134,18 +138,18 @@
     <p class="section-sub">Nuestros programas están diseñados para superar tus límites y ayudarte a alcanzar tus objetivos de fitness más rápido. Dirigidos por expertos, orientados a resultados.</p>
     <div class="body-features">
       <div class="body-feat">
-        <div class="body-feat-icon">🏋️</div>
+        <div class="body-feat-icon"><img src="images/icon_bench-press.png" alt="Icono fuerza" width="45" height="45"></div>
         <h3>Entrenamiento de fuerza</h3>
         <p>Desarrolla masa muscular magra y aumenta tu fuerza general con nuestros programas estructurados de entrenamiento con pesas, diseñados para todos los niveles.</p>
       </div>
       <div class="body-feat">
-        <div class="body-feat-icon">🔥</div>
-        <h3>Cardio & HIIT</h3>
+        <div class="body-feat-icon"><img src="images/icon_workout.png" alt="Icono fuerza" width="45" height="45"></div>
+          <h3>Cardio & HIIT</h3>
         <p>Quema calorías, mejora tu resistencia y acelera tu metabolismo con nuestras sesiones de cardio y entrenamiento de intervalos de alta intensidad.</p>
       </div>
       <div class="body-feat">
-        <div class="body-feat-icon">🧘</div>
-        <h3>Recuperación & movilidad</h3>
+        <div class="body-feat-icon"><img src="images/icon_fitness-gym.png" alt="Icono fuerza" width="45" height="45"></div>
+          <h3>Recuperación & movilidad</h3>
         <p>Previene lesiones y mejora tu rendimiento con sesiones específicas de recuperación, estiramientos y ejercicios de movilidad.</p>
       </div>
     </div>
@@ -239,18 +243,18 @@
 <div class="promo-row">
   <div class="promo-card promo-card-1">
     <div class="container" style="padding:0;">
-      <p class="promo-eyebrow">Membership</p>
-      <h3 class="promo-title">Join Membership Now And<br><span>Get 40% Off!</span></h3>
-      <p class="promo-desc">Limited time offer for new members. Sign up today and unlock all facilities, classes, and trainer support at a massive discount.</p>
-      <a href="#" class="btn btn-blue">Claim Offer →</a>
+      <p class="promo-eyebrow">Membresías</p>
+      <h3 class="promo-title">¡Únete ahora y<br><span>obtén un 20% de descuento!</span></h3>
+      <p class="promo-desc">Oferta por tiempo limitado para nuevos miembros. Regístrate hoy y accede a todas las clases con un gran descuento. Plan mínimo de 6 meses.</p>
+      <a href="#" class="btn btn-blue">Regístrate →</a>
     </div>
   </div>
   <div class="promo-card promo-card-2">
     <div style="padding:0;">
-      <p class="promo-eyebrow">Opening Hours</p>
-      <h3 class="promo-title">Check Our Classes'<br>Opening Hours!</h3>
-      <p class="promo-desc">Morning sessions start at 6:00 AM. Evening classes run until 10:00 PM. View the full schedule and book your spot online.</p>
-      <a href="#" class="btn" style="background:#000;color:#fff;">View Schedule →</a>
+      <p class="promo-eyebrow">Horarios</p>
+      <h3 class="promo-title">Consulta nuestros horarios<br>en nuestras sedes</h3>
+      <p class="promo-desc">Las clases de la mañana comienzan a las 11:20 hrs. Las clases de la tarde terminan a las 17:00 hrs. Consulta los horarios completos y reserva tu clase.</p>
+      <a href="#" class="btn" style="background:#000;color:#fff;">Contáctanos →</a>
     </div>
   </div>
 </div>
@@ -312,38 +316,38 @@
   <div class="container">
     <div class="programs-inner">
       <div class="programs-text">
-        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Our Programs</p>
-        <h2 class="programs-title">Start Working On A New You With Fitness Zone Programs</h2>
-        <p class="programs-desc">From beginners to advanced athletes, our curated programs are built to challenge, motivate, and deliver real results. Choose the path that fits your goals.</p>
-        <a href="#" class="btn btn-blue">View All Programs →</a>
+        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Nuestro Entrenamiento</p>
+        <h2 class="programs-title">Cada sesión te reta a conquistar nuevas metas.</h2>
+        <p class="programs-desc">Desde principiantes hasta atletas avanzados, nuestros programas cuidadosamente seleccionados están diseñados para desafiarte, motivarte y brindarte resultados reales. Elige el camino que mejor se adapte a tus objetivos.</p>
+        <a class="btn btn-blue">Descubre lo que puedes lograr →</a>
       </div>
       <div class="programs-images">
         <div class="prog-img-wrap">
-          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=500&q=80" alt="Zumba">
+          <img src="images/sede_01.png" alt="Sede Manco">
           <div class="prog-img-label">
-            <div class="prog-img-name">Zumba</div>
-            <div class="prog-img-sub">Mon / Wed / Fri</div>
+            <div class="prog-img-name">Fuerza</div>
+            <div class="prog-img-sub">Levantamiento Olímpico</div>
           </div>
         </div>
         <div class="prog-img-wrap">
           <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&q=80" alt="Yoga">
           <div class="prog-img-label">
-            <div class="prog-img-name">Yoga</div>
-            <div class="prog-img-sub">Tue / Thu / Sat</div>
+            <div class="prog-img-name">Potencia</div>
+            <div class="prog-img-sub">Halterofilia</div>
           </div>
         </div>
         <div class="prog-img-wrap">
           <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&q=80" alt="Boxing">
           <div class="prog-img-label">
-            <div class="prog-img-name">Boxing</div>
-            <div class="prog-img-sub">Mon / Wed</div>
+            <div class="prog-img-name">Velocidad</div>
+            <div class="prog-img-sub">Gimnasia</div>
           </div>
         </div>
         <div class="prog-img-wrap">
           <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=500&q=80" alt="Cycling">
           <div class="prog-img-label">
-            <div class="prog-img-name">Cycling</div>
-            <div class="prog-img-sub">Daily 6AM</div>
+            <div class="prog-img-name">Intensidad</div>
+            <div class="prog-img-sub">Entrenamiento Funcional</div>
           </div>
         </div>
       </div>
@@ -355,37 +359,37 @@
 <section class="trainers">
   <div class="container">
     <div class="trainers-header">
-      <p class="trainers-eyebrow">Nuestro Team</p>
-      <h2 class="trainers-title">Conoce a nuestros entrenadores</h2>
-      <p class="trainers-sub">Entrenadores de primer nivel dedicados a ayudarte a alcanzar tu máximo rendimiento.</p>
+      <p class="trainers-eyebrow">Nuestra Sede</p>
+      <h2 class="trainers-title">EQUIPAMIENTO TOP PARA TU MÁXIMO RENDIMIENTO</h2>
+      <p class="trainers-sub">Instalaciones premium y máquinas de última generación diseñadas para optimizar cada uno de tus entrenamientos.</p>
     </div>
     <div class="trainers-grid">
       <div class="trainer-card">
-        <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&q=80" alt="Trainer 1">
+          <img src="images/sede_01.png" alt="Sede Manco">
         <div class="trainer-info">
-          <div class="trainer-name">Diego Manco</div>
-          <div class="trainer-role">Fuerza & Acondicionamiento</div>
+          <div class="trainer-name">Remos Ergonómicos</div>
+          <div class="trainer-role">RACKS & PESO LIBRE PROFESIONAL</div>
         </div>
       </div>
       <div class="trainer-card">
-        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Trainer 2">
+          <img src="images/sede_02.png" alt="Sede Manco">
         <div class="trainer-info">
-          <div class="trainer-name">Rosario Quispe</div>
-          <div class="trainer-role">Halterofilia</div>
+          <div class="trainer-name">Barra Olímpica</div>
+          <div class="trainer-role">TROTADORAS & ERGÓMETROS TOP</div>
         </div>
       </div>
       <div class="trainer-card">
-        <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=400&q=80" alt="Trainer 3">
+          <img src="images/sede_03.png" alt="Sede Manco">
         <div class="trainer-info">
-          <div class="trainer-name">Susana Manco</div>
-          <div class="trainer-role">Fuerza & Halterofilia</div>
+          <div class="trainer-name">Soga Funcional</div>
+          <div class="trainer-role">MÁQUINAS DE POLEAS AISLADAS</div>
         </div>
       </div>
       <div class="trainer-card">
-        <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?w=400&q=80" alt="Trainer 4">
+          <img src="images/sede_04.png" alt="Sede Manco">
         <div class="trainer-info">
-          <div class="trainer-name">Jordan Blake</div>
-          <div class="trainer-role">Boxing & Combat</div>
+          <div class="trainer-name">Cajón 20-24-30</div>
+          <div class="trainer-role">FUNCIONAL, BOX & CROSS</div>
         </div>
       </div>
     </div>
@@ -504,13 +508,13 @@
   <div class="container">
     <div class="newsletter-inner">
       <div>
-        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Stay Updated</p>
-        <h2 class="newsletter-title">Newsletter</h2>
-        <p class="newsletter-sub">Get the latest workout tips, class schedules, and exclusive member offers delivered to your inbox.</p>
+        <p style="font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:10px;">Mantente informado</p>
+        <h2 class="newsletter-title">Boletín digital</h2>
+        <p class="newsletter-sub">Recibe en tu correo electrónico los últimos consejos de entrenamiento, horarios de clases y ofertas exclusivas para miembros.</p>
       </div>
       <div class="newsletter-form">
-        <input class="newsletter-input" type="email" placeholder="Enter your email address...">
-        <a href="#" class="btn btn-blue" style="white-space:nowrap;">Subscribe →</a>
+        <input class="newsletter-input" type="email" placeholder="Introduce tu email">
+        <a href="#" class="btn btn-blue" style="white-space:nowrap;">Suscríbete →</a>
       </div>
     </div>
   </div>
@@ -521,10 +525,10 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-logo-text">FITNESS <span>ZONE</span></div>
-        <p>+1 (808) 475 8866</p>
-        <p>fitness@fitnesszone.com</p>
-        <p>400 Broad St, Seattle, WA 98108</p>
+        <div class="footer-logo-text">DIEGO <span>TRAINING</span></div>
+        <p>+51 972 020 185</p>
+        <p>info@diegomanco.com</p>
+        <p>Av. Ernesto Diez Canseco 220, Miraflores</p>
       </div>
       <div class="footer-col">
         <h4>Empresa</h4>
@@ -599,6 +603,19 @@
   ['testiPrev','testiPrev2','testiPrev3'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('click', () => testiGoTo(testiCurrent - 1));
+  });
+
+ // ── HAMBURGER MENU ──
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.querySelector('.nav-links');
+
+  navToggle.addEventListener('click', function () {
+    navLinks.classList.toggle('nav-open');
+  });
+
+  // Cerrar menu al hacer click en un link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('nav-open'));
   });
 </script>
 
